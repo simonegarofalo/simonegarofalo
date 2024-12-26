@@ -1,7 +1,7 @@
 Hello 👋🏼
 I'm Simone Garofalo!
 
-I'm a Front-End Dev.
+I'm a Front-End Dev.<br>
 Check my repo here on Github! 👇🏼
 
 <!---

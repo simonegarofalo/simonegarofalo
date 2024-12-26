@@ -1,5 +1,4 @@
-Hello 👋🏼
-I'm Simone Garofalo!
+Hello 👋🏼 I'm Simone!
 
 I'm a Front-End Dev.<br>
 Check my repo here on Github! 👇🏼

@@ -1,6 +1,6 @@
 Hi 👋🏼 I'm Simone!
 
-I'm a Front-End Dev.<br>
+I'm a Front-End Dev.<br><br>
 Take a look at my repo here on Github! 👇🏼
 
 <!---

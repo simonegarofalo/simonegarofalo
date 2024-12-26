@@ -1,7 +1,7 @@
-Hello 👋🏼 I'm Simone!
+Hi 👋🏼 I'm Simone!
 
 I'm a Front-End Dev.<br>
-Check my repo here on Github! 👇🏼
+Take a look at my repo here on Github! 👇🏼
 
 <!---
 simonegarofalo/simonegarofalo is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.

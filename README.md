@@ -1,6 +1,6 @@
 Hi 👋🏼 I'm Simone!
 <br><br>
-🧑🏻‍💻 I'm a Junior Web Developer & Web Designer <br>
+🧑🏻‍💻 I'm a Junior Web Developer & Web Designer. <br>
 HTML, CSS (Bootstrap and Tailwind), Javascript (GSAP and ScrollTrigger), PHP, MySQL.
 
 Take a look at my repo here on Github! 👇🏼

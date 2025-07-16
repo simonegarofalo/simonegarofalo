@@ -1,4 +1,4 @@
-## Hi there! 🙃
+## Hi there! 👀
 
 
 I'm <a href="https://simone-garofalo.netlify.app/" target="_self">Simone</a>, a front-end developer based in Milan.

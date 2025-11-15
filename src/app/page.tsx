@@ -1,7 +1,5 @@
-import Navbar from '../components/Navbar.tsx';
-
 export default function Home() {
 return (
-    <Navbar />
+    <h1>Il mio portfolio</h1>
   );
 };

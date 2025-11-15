@@ -1,7 +1,7 @@
-import Post from '../../../components/Post.tsx'
+import Post from '../../../../components/Post.tsx'
 
-export default function PostPage({ params }: { params: { category: string; slug: string } }) {
-  return(
-  <Post category={params.category} slug={params.slug} />
-  )
-} 
+export default async function PostPage({ params }: { params: Promise<{ category: string; slug: string }> }) {
+  const { category, slug } = await params;
+
+  return <Post category={category} slug={slug} />;
+};

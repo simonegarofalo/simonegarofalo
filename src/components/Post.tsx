@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { sql } from '../lib/db'
 
 type Props = { category?: string, slug?: string };
@@ -20,7 +21,7 @@ export default async function Post({ category, slug }: Props) {
       <div>
         <h1>{singlePost.title}</h1>
         <p>{singlePost.content}</p>
-        <span>{singlePost.category}</span>
+        <Link href={`/blog/${post.category}`}>{post.category}</Link>
       </div>
     );
   } catch (err) {

@@ -18,8 +18,8 @@ export default async function Post({ category, slug }: Props) {
     }
 
     return (
-      <div>
-        <h1>{singlePost.title}</h1>
+      <div className="col-start-2 col-end-12 md:col-start-4 md:col-end-10 my-10">
+        <h1 className="post-title">{singlePost.title}</h1>
         <p>{singlePost.content}</p>
         <Link href={`/blog/${post.category}`}>{post.category}</Link>
       </div>

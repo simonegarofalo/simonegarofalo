@@ -21,6 +21,10 @@ h2{
   font-weight: 200;
   line-height: 40px
 }
+h3{
+  font-size: 22px;
+  font-weight: 300;
+}
 .post-title{
   font-size: 32px;
   line-height: 30px;
@@ -31,6 +35,16 @@ h2{
 }
 .read-more{
   text-decoration: underline;
+}
+.cs-category{
+  color: green;
+}
+.life-category{
+  color: blue;
+}
+.project-title{
+  font-size: 20px;
+  font-weight: 500;
 }
 
 @media(min-width: 769px){

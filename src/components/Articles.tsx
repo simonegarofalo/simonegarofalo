@@ -47,6 +47,6 @@ export default async function Articles({ category }: Props) {
     );
   } catch (err) {
     console.error("db query failed:", err);
-    return <div>Errore nel recupero degli articoli</div>;
+    return <div>Articles not found</div>;
   };
 };

@@ -13,7 +13,7 @@ export default function Navbar() {
         <Link href="/"><div id="logo"></div></Link>
         <ul className="flex items-center justify-center gap-4">
           <li><Link href="/blog"><Image src={blogIcon} alt="blog-icon" width={16} height={16} className="mr-1"/></Link></li>
-          <li><Link href="/progetti"><Image src={projectsIcon} alt="projects-icon" width={24} height={24} /></Link></li>
+          <li><Link href="/projects"><Image src={projectsIcon} alt="projects-icon" width={24} height={24} /></Link></li>
           <li><Link href="" download><Image src={docIcon} alt="cv-icon" width={22} height={22} /></Link></li>
         </ul>
       </nav>

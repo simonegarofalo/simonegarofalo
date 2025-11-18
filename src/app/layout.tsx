@@ -4,6 +4,7 @@ import "./globals.css";
 
 // components
 import Navbar from '../components/Navbar.tsx';
+import Footer from '../components/Footer.tsx'
 
 // Import del font (opzionale)
 const inter = Inter({ subsets: ["latin"] });
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

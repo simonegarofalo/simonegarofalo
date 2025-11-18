@@ -15,6 +15,14 @@ const languageColor: Record<string, string> = {
 export default function Project({ repo }: { repo: any }) {
   return(
     <div className="my-10 p-5 py-10 border border-gray-300 rounded-lg">
+      {repo.extra?.image && (
+      <Image 
+        src={`/${repo.extra.image}`} 
+        alt={repo.name} 
+        width={30}
+        height={30}
+      />
+      )}
       <Link
         href={repo.html_url}
         target="_blank"
@@ -25,7 +33,7 @@ export default function Project({ repo }: { repo: any }) {
       {repo.extra?.description && (
         <p className="mt-2 text-sm">{repo.extra.description}</p>
       )}
-      <div className="flex items-center gap-1 mt-6 pb-4">  
+      <div className="flex items-center gap-1 mt-2 pb-6">  
         <div className="w-3 h-3 rounded-full" style={{ backgroundColor: languageColor[repo.language] || "#999" }}></div>
         <p className="text-sm">{repo.language}</p>
       </div>

@@ -38,10 +38,11 @@ export default async function Articles({ category }: Props) {
                 </div>
               </Link>
               <Link href={`/blog/${post.category}/${post.slug}`} className="preview-post-title w-fit">{post.title}</Link>
+              <p className="text-sm mb-4 text-gray-500"><i>{`Milan, ${new Date(post.created_at).toLocaleDateString("it-IT")}`}</i></p>
               </div>
-              <p className="mb-4">{post.content}</p>
-            <Link href={`/blog/${post.category}/${post.slug}`} className="read-more"><i>Read more</i></Link>
-            </div>
+              <p className="mb-3">{post.content}</p>
+            <Link href={`/blog/${post.category}/${post.slug}`} className="read-more"><i>Read more</i></Link><br />
+          </div>
           ))}
       </section>
     );

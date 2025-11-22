@@ -1,5 +1,4 @@
 import Link from '../components/Link.tsx';
-import './Navbar.css';
 
 export default function Navbar() {
   return(

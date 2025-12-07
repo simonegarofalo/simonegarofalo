@@ -1,4 +1,4 @@
-import Articles from '../../../components/Articles.tsx'
+import Articles from '../../../components/Articles'
 
 export default async function CategoryPage({ params }: { params: Promise<{ category: string }> }) {
   const { category } = await params;

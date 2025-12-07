@@ -1,4 +1,4 @@
-import Articles from '../../components/Articles.tsx'
+import Articles from '../../components/Articles'
 
 export default function Blog() {
       return (

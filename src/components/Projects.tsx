@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image'
-import { getProjects } from '../lib/projects.ts'
-import Project from '../components/Project.tsx'
+import { getProjects } from '../lib/projects'
+import Project from '../components/Project'
 
 export default async function Projects() {
   const repos = await getProjects();

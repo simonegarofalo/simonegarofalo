@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import Post from '../../../../components/Post'
 
 export default async function PostPage({ params }: { params: Promise<{ category: string; slug: string }> }) {

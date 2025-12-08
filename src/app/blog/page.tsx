@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import Articles from '../../components/Articles'
 
 export default function Blog() {

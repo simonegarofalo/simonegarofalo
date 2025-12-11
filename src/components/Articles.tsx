@@ -32,15 +32,15 @@ export default async function Articles({ category }: Props) {
           {posts.map((post: any) => (
             <div className="my-10" key={post.id}>
             <div className="flex flex-col">
-             <Link href={`/blog/${post.category}`} className="w-fit">
+{/*              <Link href={`/blog/${post.category}`} className="w-fit">
                 <div className={`min-w-10 h-8 flex justify-center items-center px-2 rounded ${categoryColors[post.category] || categoryColors.default}`}>
                 {post.category}
                 </div>
-              </Link>
-              <Link href={`/blog/${post.category}/${post.slug}`} className="preview-post-title w-fit">{post.title}</Link>
-              <p className="text-sm mb-4 text-gray-500"><i>{`Milan, ${new Date(post.created_at).toLocaleDateString("it-IT")}`}</i></p>
+              </Link> */}
+              <Link href={`/blog/${post.category}/${post.slug}`} className="post-title w-fit">{post.title}</Link>
+              <p className="text-sm mt-2 mb-4 text-gray-500"><i>{`Milan, ${new Date(post.created_at).toLocaleDateString("it-IT")}`}</i></p>
               </div>
-              <p className="mb-3">{post.content}</p>
+              <div dangerouslySetInnerHTML={{ __html: post.content_preview }} />
             <Link href={`/blog/${post.category}/${post.slug}`} className="read-more"><i>Read more</i></Link><br />
           </div>
           ))}

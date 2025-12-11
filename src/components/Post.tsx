@@ -18,10 +18,10 @@ export default async function Post({ category, slug }: Props) {
     }
 
     return (
-      <div className="col-start-2 col-end-12 md:col-start-4 md:col-end-10 my-10">
+      <div className="col-start-2 col-end-12 md:col-start-4 md:col-end-10 mt-14 mb-10">
         <h1 className="post-title">{singlePost.title}</h1>
          <p className="text-sm mt-2 mb-4 text-gray-500"><i>{`Milan, ${new Date(singlePost.created_at).toLocaleDateString("it-IT")}`}</i></p>
-        <p>{singlePost.content}</p>
+         <div dangerouslySetInnerHTML={{ __html: singlePost.content }} />
       </div>
     );
   } catch (err) {

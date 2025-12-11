@@ -31,23 +31,23 @@ export default function Project({ repo }: { repo: any }) {
         {repo.name}
       </Link>
       {repo.extra?.description && (
-        <p className="mt-2 text-sm">{repo.extra.description}</p>
+        <p className="mt-2 text-sm mb-0">{repo.extra.description}</p>
       )}
       <div className="flex items-center gap-1 mt-2 pb-6">  
         <div className="w-3 h-3 rounded-full" style={{ backgroundColor: languageColor[repo.language] || "#999" }}></div>
-        <p className="text-sm">{repo.language}</p>
+        <span className="text-sm">{repo.language}</span>
       </div>
       <Link href={repo.html_url} target="_blank" className="w-fit inline-block mr-2">
         <div className="w-fit flex gap-1 bg-black text-sm text-white py-1 px-2 rounded">
           <Image src={githubIcon} alt="github-icon" width={16} height={16} />
-          <p className="text-[0.7rem]">Source</p>
+          <span className="text-[0.7rem]">Source</span>
         </div>
       </Link>
       {repo.extra?.website && (
         <Link href={repo.extra.website} target="_blank" className="w-fit inline-block">
           <div className="w-fit flex gap-1 bg-black text-sm text-white py-1 px-2 rounded">
           <Image src={websiteIcon} alt="website-icon" width={16} height={16} />
-          <p className="text-[0.7rem]">Website</p>
+          <span className="text-[0.7rem]">Website</span>
         </div>
         </Link>
       )}
